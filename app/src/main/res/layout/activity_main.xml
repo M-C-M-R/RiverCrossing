@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/river_background"
+    tools:context=".MainScreen">
+
+
+    <Button
+        android:id="@+id/goButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="278dp"
+        />
+
+    <Button
+        android:id="@+id/goButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="278dp"
+        />
+
+    <Button
+        android:id="@+id/goButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="278dp"
+        />
+
+    <ImageView
+        android:id="@+id/farmerImage1"
+        android:layout_width="40dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="180dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/farmer"
+        />
+
+    <ImageView
+        android:id="@+id/farmerImage2"
+        android:layout_width="40dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="180dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/farmer"
+        />
+
+    <ImageView
+        android:id="@+id/boatImage"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boat"
+        />
+
+
+
+<!--Characters on the original side -->
+    <Button
+        android:id="@+id/wolfImage"
+        android:text="W"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/wolf"
+        android:onClick="wolfOnClick" />
+
+
+    <Button
+        android:id="@+id/sheepImage"
+        android:text="S"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="165dp"
+        android:background="@drawable/sheep"
+        android:onClick="moveSheepFromLowToBoat" />
+
+
+    <Button
+        android:id="@+id/cabbageImage"
+        android:text="C"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="230dp"
+        android:background="@drawable/cabbage"
+        android:onClick="moveCabbageFromLowToBoat"/>
+
+<!--    Character on the Boat (Lower) -->
+    <Button
+        android:id="@+id/wolfOnBoat"
+        android:text="W"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/wolf"
+        android:onClick="moveWolfFromBoatToLow"/>
+
+    <Button
+        android:id="@+id/sheepOnBoat"
+        android:text="S"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="168dp"
+        android:background="@drawable/sheep"
+        android:onClick="moveSheepFromBoatToLow"/>
+
+    <Button
+        android:id="@+id/cabbageOnBoat"
+        android:text="C"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="168dp"
+        android:background="@drawable/cabbage"
+        android:onClick="moveCabbageFromBoatToLow"/>
+
+<!--    Character on the Boat 2 (towards the upper side) -->
+    <Button
+        android:id="@+id/wolfOnUpperBoat"
+        android:text="W"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/wolf"
+        android:onClick="moveWolfFromBoatToUpper"/>
+
+    <Button
+        android:id="@+id/sheepOnUpperBoat"
+        android:text="S"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="168dp"
+        android:background="@drawable/sheep"
+        android:onClick="moveSheepFromBoatToUpper"/>
+
+    <Button
+        android:id="@+id/cabbageOnUpperBoat"
+        android:text="C"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="168dp"
+        android:background="@drawable/cabbage"
+        android:onClick="moveCabbageFromBoatToUpper"/>
+
+<!--    Characters on the upper side -->
+    <Button
+        android:id="@+id/wolfUpperSide"
+        android:text="W"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/wolf"
+        android:onClick="moveWolfFromUpperToBoat" />
+
+
+    <Button
+        android:id="@+id/sheepUpperSide"
+        android:text="S"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="165dp"
+        android:background="@drawable/sheep"
+        android:onClick="moveSheepFromUpperToBoat" />
+
+
+    <Button
+        android:id="@+id/cabbageUpperSide"
+        android:text="C"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="230dp"
+        android:background="@drawable/cabbage"
+        android:onClick="moveCabbageFromUpperToBoat" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
